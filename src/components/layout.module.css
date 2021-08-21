@@ -1,20 +1,42 @@
-.container {
-    margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+/* Global CSS Here */
+
+:root {
+    --space1: 3px;
+    --space2: 5px;
+    --space3: 8px;
+    --space4: 13px;
+    --space5: 26px;
+    --space6: 52px;
+    --space7: 76px;
+    --space8: 112px;
+    --mobile: 400px;
+    --small: 600px;
+    --medium: 1000px;
+    --large: 1300px;
+    --standard-font: "Source Sans Pro", sans-serif;
+    --standard-black: #11161A;
+    --standard-white: #ffffff;
+    --standard-grey: #A8B2BA;
+    --standard-darker: #727272;
+    --standard-charcoal: #273139;
+    --standard-grey-light: #EEF1F3;
+    --standard-grey-lighter: #cccccc;
+    --standard-grey-disabled: #C9D2D8;
+    --filter-red: #FF0000;
+    --filter-pink: #f79a9a;
+    --filter-purple: #9900ff;
+    --filter-green: #009c00;
+    --filter-blue: #005F9F;
+    --filter-light-blue: #00A2DA;
+    --filter-lighter-blue: #00B7E7;
+    --filter-white-darker: #EEEEEE;
+    --filter-orange: #ff9900;
+    --filter-yellow: #ffe600;
+    --filter-silver: #c4c2c2;
+    --brand-primary: #BA181B;
   }
-  
-  .heading {
-    color: rebeccapurple;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
+
+html body {
+    margin: 0;
+}
+
