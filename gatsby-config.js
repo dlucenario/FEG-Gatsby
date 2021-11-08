@@ -4,8 +4,9 @@ module.exports = {
     title: 'Foremost Everglory',
   },
   plugins: ['gatsby-plugin-emotion',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {

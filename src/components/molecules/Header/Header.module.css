@@ -1,0 +1,59 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  padding: 8px 0px;
+  z-index: 10;
+  transition: all ease-in 0.3s;
+
+  width: 100%;
+}
+
+.inactive {
+    background-color: transparent;
+}
+
+.active {
+    background-color: var(--standard-charcoal);
+    opacity: 0.98;
+}
+
+.root nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.root a, a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--standard-white);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link {
+    position: relative;
+}
+
+.link hr {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    border-top: 3px solid var(--brand-primary);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover hr {
+    opacity: 1;
+}
+
+.root a:hover {
+    color: var(--brand-primary);
+}

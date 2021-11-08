@@ -1,0 +1,16 @@
+.root {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mapElement {
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+}
+
+.markerElement {
+    color: var(--brand-primary);
+}

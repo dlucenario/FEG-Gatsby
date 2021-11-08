@@ -1,0 +1,10 @@
+.root {
+    margin-top: 48px;
+    min-height: 50px;
+    background-color: var(--standard-charcoal);
+}
+
+.root p {
+    padding: 16px;
+    color: var(--standard-white);
+}

@@ -27,4 +27,31 @@ module.exports = (plop) => {
       },
     ],
   });
+  plop.setGenerator('organisms', {
+    description: 'Create an organism component',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your atom component name?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/components/organisms/{{pascalCase name}}/index.jsx',
+        templateFile: 'plop-templates/component/base.index.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/organisms/{{pascalCase name}}/{{pascalCase name}}.jsx',
+        templateFile: 'plop-templates/component/base.jsx.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/organisms/{{pascalCase name}}/{{pascalCase name}}.module.css',
+        templateFile: 'plop-templates/component/base.module.css.hbs',
+      },
+    ],
+  });
 };

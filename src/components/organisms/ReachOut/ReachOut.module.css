@@ -1,0 +1,63 @@
+.root {
+
+}
+
+.reachContainer {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    gap: 40px;
+}
+
+.reachContainer h4 {
+    color: var(--standard-black);
+    font-size: 28px;
+}
+
+.reachContainer h5 {
+    color: var(--brand-primary);
+    font-size: 24px;
+    margin: 40px 0px 16px 0px;
+}
+
+.connectContainer p {
+    color: var(--standard-darker);
+}
+
+.contactFormContainer {
+
+}
+
+.contactContainer {
+    margin-top: 32px;
+}
+
+.buttonContainer {
+    margin: 24px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.addressContainer {
+
+}
+
+.infoContainer {
+    margin: 32px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.contentHeader {
+    color: var(--brand-primary);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.content {
+    color: var(--standard-darker);
+    line-height: 24px;
+    font-size: 16px;
+}

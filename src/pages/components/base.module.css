@@ -1,3 +1,24 @@
 .root {
-    margin: 26px;
+    margin: 100px 26px 26px 26px;
+}
+
+.buttonContainer {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 12px 0px;
+}
+
+.typographyContainer {
+    margin: 12px 0px;
+}
+
+.headerContainer {
+    margin-top: 12px;
+}
+
+.sliderContainer {
+    border: 1px solid var(--standard-grey);
+    width: 500px;
+    height: 200px;
 }

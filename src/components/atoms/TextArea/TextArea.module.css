@@ -1,0 +1,21 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.root label {
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.root textarea {
+    border-radius: 2px;
+    padding: 8px;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: 2px solid var(--standard-grey);
+
+    font-size: 14px;
+    resize: none;
+}

@@ -1,0 +1,56 @@
+.root {
+  
+}
+
+.root p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.root button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    min-height: 40px;
+    padding: 16px;
+    border: 0;
+}
+
+.primary {
+    outline: none;
+    color: var(--standard-white);
+    fill: var(--standard-white);
+    background-color: var(--brand-primary);
+}
+
+.root .primary:hover {
+    background-color: var(--brand-primary-darker);
+}
+
+.secondary {
+    color: var(--brand-primary);
+    fill: var(--brand-primary);
+}
+
+.root .secondary:hover {
+    background-color: var(--filter-silver);
+    color: var(--standard-white);
+}
+
+.iconContainer {
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}

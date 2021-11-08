@@ -1,4 +1,5 @@
 /* Global CSS Here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --space1: 3px;
@@ -33,10 +34,17 @@
     --filter-orange: #ff9900;
     --filter-yellow: #ffe600;
     --filter-silver: #c4c2c2;
-    --brand-primary: #BA181B;
+    --brand-primary: #FF0000;
+    --brand-primary-darker: #6E0000;
+    --brand-primary-lighter: #FF4D4D;
   }
 
-html body {
+html, body, h1, h2, h3, h4, h5, p, h6 {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior:smooth
 }
 
+.root {
+  
+}

@@ -1,0 +1,33 @@
+.root {
+    margin-top: 32px;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1fr;
+    gap: 24px;
+}
+
+.videoContainer {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--standard-darker);
+    padding: 2px 8px;
+
+    display: flex;
+    align-self: start;
+}
+
+.content h6 {
+    font-size: 24px;
+    color: var(--brand-primary);
+    margin-bottom: 16px;
+}
+
+.content {
+    margin-bottom: 32px;
+}
+
+.content p {
+    color: var(--standard-darker);
+}

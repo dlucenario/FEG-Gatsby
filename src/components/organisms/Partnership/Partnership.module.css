@@ -1,0 +1,41 @@
+.root {
+    margin-top: 64px;
+}
+
+.partnership {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.content {
+    margin-top: 16px;
+}
+
+.content h4 {
+    font-size: 24px;
+}
+
+.content h5 {
+    font-size: 40px;
+    color: var(--brand-primary);
+    margin: 16px 0px;
+}
+
+.content p {
+    color: var(--standard-darker);
+}
+
+.contractor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.imageContainer img {
+    width: 100%;
+    min-height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+}
