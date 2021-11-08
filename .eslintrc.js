@@ -16,8 +16,12 @@ module.exports = {
   },
   plugins: [
     'react',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   ],
   rules: {
     'react/prop-types': 'off',
+    'arrow-body-style': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };

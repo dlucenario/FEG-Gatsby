@@ -1,0 +1,61 @@
+.root {
+    min-width: 98vw;
+    height: 95vh;
+    position: relative;
+}
+
+.coverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.coverContent {
+    position: absolute;
+    top: 48%;
+    left: 56px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.coverHeadlineContainer {
+    width: 800px;
+}
+
+.headlineText {
+    color: var(--standard-white);
+    font-size: 2.25rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+}
+
+.headlineSubText {
+    color: var(--standard-white);
+    margin-top: 32px;
+    letter-spacing: 0.1rem;
+    line-height: 24px;
+}
+
+.highlight {
+    color: var(--standard-white);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-top: 32px;
+    gap: 16px;
+    width: 550px;
+}
+
+.anchor {
+    visibility: hidden;
+    min-height: 0px;
+}
+
+.buttonContainer a {
+    width: 100%;
+    text-decoration: none;
+}

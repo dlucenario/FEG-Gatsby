@@ -1,10 +1,13 @@
 import * as React from 'react';
-import * as styles from './{{ pascalCase name }}.module.css';
+import * as styles from './{{pascalCase name}}.module.css';
 
-const {{ pascalCase name}} = () => (
-  <div className={styles.root}>
-	  <p>Enter Content Here</p>
-  </div>
-);
+const {{pascalCase name}} = () => {
+  console.log('Template Module');
+  return (
+    <div className={styles.root}>
+      <p>Enter Content Here</p>
+    </div>
+  );
+};
 
-export default {{ pascalCase name}};
+export default {{pascalCase name}};
