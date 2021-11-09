@@ -22,7 +22,7 @@ const Cover = () => {
     <div className={styles.root} id={'home'}>
       <img alt="cover" className={styles.coverImage} src={CoverImage} />
       <div className={styles.coverContent}>
-        <img alt="logo_full" src={FullLogo} />
+        <img className={styles.egLogo} alt="logo_full" src={FullLogo} />
         <div className={styles.coverHeadlineContainer}>
           <p className={styles.headlineText}>
             Your

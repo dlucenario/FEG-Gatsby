@@ -61,3 +61,20 @@
     line-height: 24px;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 800px) {
+    .reachContainer {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .infoContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .buttonContainer {
+        grid-template-columns: 1fr;
+    }
+}

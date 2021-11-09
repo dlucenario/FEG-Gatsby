@@ -1,10 +1,12 @@
-import React, {useEffect, useState, useContext} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'gatsby';
 import * as styles from './Header.module.css';
 import Logo from '../../atoms/Logo';
+import Icon from '../../atoms/Icons/Icon';
 
 const Header = () => {
   const [transparent, setTransparent] = useState(true);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const handleScroll = () => {
     if(175 < window.pageYOffset) {
@@ -20,10 +22,9 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
 
-  return (
-    <div className={`${styles.root} ${transparent === true ? styles.inactive : styles.active}`}>
-      <nav>
-        <Logo />
+  const renderLinks = () => {
+    return (
+      <div className={styles.linkContainer} onClick={() => setShowMobileMenu(false)}>
         <Link to="/#home">
           <div className={styles.link}>
             <p>Home</p>
@@ -60,7 +61,29 @@ const Header = () => {
             <hr />
           </div>
         </Link>
-      </nav>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <div className={`${styles.root} ${transparent === true ? styles.inactive : styles.active}`}>
+        <nav>
+          <Logo width={'50px'} height={'55px'} />
+          {renderLinks()}
+        </nav>
+      </div>
+      <div className={styles.mobileRoot}>
+        <div className={styles.mobileContent}>
+          <Logo width={'32px'} height={'36px'} />
+          <div className={styles.burgerContainer} onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            <Icon symbol={'hamburger'}></Icon>
+          </div>
+        </div>
+        <div className={`${styles.mobileMenuContainer} ${showMobileMenu === true ? styles.mmShow : styles.mmHide}`}>
+          {renderLinks()}
+        </div>
+      </div>
     </div>
   );
 };

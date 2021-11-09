@@ -31,3 +31,9 @@
 .content p {
     color: var(--standard-darker);
 }
+
+@media only screen and (max-width: 800px) {
+    .contentContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
