@@ -1,7 +1,16 @@
 .root {
-
+    color: red !important;
 }
 
 .root yotpo-footer {
     display: none;
+}
+
+yotpo-footer {
+    display: none;
+}
+
+.yotpo-footer {
+    display: none;
+    color: blue;
 }
