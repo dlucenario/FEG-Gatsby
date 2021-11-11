@@ -5,6 +5,7 @@ const SampleYotpo = () => {
   
   return (
     <div className={styles.root}>
+      <p>applying styles</p>
       <div class="yotpo yotpo-main-widget"
         data-product-id="abc12345"
         data-price="Product Prices"
