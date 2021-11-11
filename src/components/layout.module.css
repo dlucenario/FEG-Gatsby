@@ -44,3 +44,8 @@ html, body, h1, h2, h3, h4, h5, p, h6 {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior:smooth
 }
+
+.yotpo-footer {
+  display: none !important;
+  color: red;
+}
